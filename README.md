@@ -2,9 +2,9 @@ Task API
 
 A simple REST API for managing tasks, built with Node.js and Express.
 
-Installation and running
+Installation and Running
 
-Clone or download this project, open a terminal in the project folder, and install the dependencies:
+Install the project dependencies:
 
 npm install
 
@@ -23,7 +23,7 @@ Swagger API documentation is available at:
 
 http://localhost:3000/docs
 
-API endpoints
+API Endpoints
 Method	Endpoint	Description
 GET	/	Returns basic API information
 GET	/health	Checks whether the API is running
@@ -33,21 +33,21 @@ POST	/tasks	Creates a new task
 PUT	/tasks/:id	Updates an existing task
 DELETE	/tasks/:id	Deletes a task
 GET	/docs	Opens the Swagger UI documentation
-Example curl output
+Example curl -i Output
 
-Example request:
+Command:
 
 curl -i http://localhost:3000/health
 
 
-Example response:
+Output:
 
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 
 {"status":"ok"}
 
-Swagger documentation
+Swagger Documentation
 
 The API includes interactive Swagger documentation.
 
@@ -55,14 +55,13 @@ Open:
 
 http://localhost:3000/docs
 
+Swagger UI Screenshot
 
-A screenshot of the Swagger UI is included in this repository as swagger.png.
+Important Note About Data
 
-Important note about data
+This API currently stores tasks in memory rather than in a database. Tasks created while the server is running will be lost when the server is stopped or restarted.
 
-This API currently stores tasks in memory rather than in a database. This means that tasks created while the server is running will be lost when the server is stopped or restarted.
-
-Project structure
+Project Structure
 CRUD-API/
 ├── server.js
 ├── openapi.json
