@@ -9,7 +9,7 @@ Install the project dependencies:
 npm install
 
 
-Start the API with:
+Start the API:
 
 npm start
 
