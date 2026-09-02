@@ -58,7 +58,10 @@ Open:
 
 http://localhost:3000/docs
 
-Swagger UI Screenshot
+## Swagger UI Screenshot
+
+![Swagger UI](swagger.png)
+
 
 Important Note About Data
 
