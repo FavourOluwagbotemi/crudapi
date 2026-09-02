@@ -22,7 +22,6 @@ http://localhost:3000
 Swagger API documentation is available at:
 
 http://localhost:3000/docs
-
 ## API Endpoints
 
 | Method | Endpoint | Description |
@@ -36,11 +35,13 @@ http://localhost:3000/docs
 | DELETE | `/tasks/:id` | Deletes a task |
 | GET | `/docs` | Opens the Swagger UI documentation |
 
-Example curl -i Output
+E## Example curl -i Output
 
 Command:
 
+```bash
 curl -i http://localhost:3000/health
+
 
 
 Output:
