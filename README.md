@@ -18,32 +18,25 @@ The API will run at:
 
 http://localhost:3000
 
-
 Swagger API documentation is available at:
 
 http://localhost:3000/docs
 
-## API Endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | `/` | Returns basic API information |
-| GET | `/health` | Checks whether the API is running |
-| GET | `/tasks` | Returns all tasks |
-| GET | `/tasks/:id` | Returns one task by ID |
-| POST | `/tasks` | Creates a new task |
-| PUT | `/tasks/:id` | Updates an existing task |
-| DELETE | `/tasks/:id` | Deletes a task |
-| GET | `/docs` | Opens the Swagger UI documentation |
-
-
-## Example curl -i Output
+API Endpoints
+Method	Endpoint	Description
+GET	/	Returns basic API information
+GET	/health	Checks whether the API is running
+GET	/tasks	Returns all tasks
+GET	/tasks/:id	Returns one task by ID
+POST	/tasks	Creates a new task
+PUT	/tasks/:id	Updates an existing task
+DELETE	/tasks/:id	Deletes a task
+GET	/docs	Opens the Swagger UI documentation
+Example curl -i Output
 
 Command:
 
-```bash
 curl -i http://localhost:3000/health
-
 
 
 Output:
@@ -61,10 +54,7 @@ Open:
 
 http://localhost:3000/docs
 
-## Swagger UI Screenshot
-
-![Swagger UI](swagger.png)
-
+Swagger UI Screenshot
 
 Important Note About Data
 
